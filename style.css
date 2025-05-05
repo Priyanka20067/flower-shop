@@ -1,5 +1,9 @@
 :root{
-    --pink:#e84393;
+    --light-beige: #f2e8e1;
+    --soft-mauve: #e0c2c2;
+    --lavender: #b0a7bc;
+    --magenta: #d6377c;
+    --sage-green: #8daa91;
 }
 
 *{
@@ -33,32 +37,32 @@ section{
     color: #333;
     padding: 1rem;
     margin: 2rem 0;
-    background: rgba(255, 51, 153,.05);
+    background: rgba(176, 167, 188, .05);
 }
 
 .heading span{
-    color: var(--pink);
+    color: var(--magenta);
 }
 
 .btn{
     display: inline-block;
     margin-top: 1rem;
     border-radius: 5rem;
-    background: #333;
+    background: var(--lavender);
     color:#fff;
     padding: .9rem 3.5rem;
     cursor: pointer;
     font-size: 1.7rem;
 }
 
-.btn :hover{
-    background:var(--pink)
+.btn:hover{
+    background: var(--magenta);
 }
 
 header{
     position: fixed;
     top: 0; left: 0; right:0;
-    background: #fff;
+    background: var(--light-beige);
     padding: 2rem 9%;
     display: flex;
     align-items: center;
@@ -74,7 +78,7 @@ header .logo{
 }
 
 header .logo span{
-    color:var(--pink);
+    color: var(--magenta);
 }
 
 header .navbar a{
@@ -84,7 +88,7 @@ color: #666;
 } 
 
 header .navbar a:hover{
-    color:var(--pink);
+    color: var(--magenta);
 }
 
 header .icons a{
@@ -94,7 +98,7 @@ header .icons a{
 }
 
 header .icons a:hover{
-    color:var(--pink);
+    color: var(--magenta);
 }
 
 header #toggler{
@@ -131,7 +135,7 @@ header .fa-bars{
 
 .home .content span{
     font-size: 3.5rem;
-    color:var(--pink);
+    color: var(--magenta);
     padding: 1rem 0;
     line-height: 1.5;
 }
@@ -176,7 +180,6 @@ position: relative;
     padding: 1rem 2rem;
     text-align: center;
     mix-blend-mode: screen;
-
 }
 
 .about .row .content{
@@ -197,7 +200,7 @@ position: relative;
 }
 
 .icons-container{
-    background: #eee;
+    background: var(--light-beige);
     display:flex;
     flex-wrap: wrap;
     gap:1.5rem;
@@ -207,12 +210,11 @@ position: relative;
 
 .icons-container .icons{
     background:#fff;
-    border: .1rem solid  rgba(0,0,0,.1);
+    border: .1rem solid rgba(0,0,0,.1);
     padding: 2rem;
     display: flex;
     align-items: center;
     flex: 1 1 25rem;
-
 }
 
 .icons-container .icons img{
@@ -220,13 +222,13 @@ position: relative;
     margin-right: 2rem;
 }
 
-.icons-container .icons  h3{
+.icons-container .icons h3{
     color: #333;
     padding-bottom: .5rem;
     font-size: 1.5rem;
 }
 
-.icons-container .icons  span{
+.icons-container .icons span{
     color: #555;
     font-size: 1.3rem;
 }
@@ -235,7 +237,6 @@ position: relative;
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-
 }
 
 .products .box-container .box{
@@ -250,9 +251,9 @@ position: relative;
     position:absolute;
     top:1rem; left:1rem;
     padding: .7rem 1rem;
-    font: size 2rem;
-    color: var(--pink);
-    background: rgba(255, 51, 153,.05);
+    font-size: 2rem;
+    color: var(--magenta);
+    background: rgba(176, 167, 188, .05);
     z-index: 1;
     border-radius: .5rem;
 }
@@ -260,25 +261,22 @@ position: relative;
 .products .box-container .box .image{
     position: relative;
     text-align: center;
-    padding-top:2rem ;
-    overflow:hidden
+    padding-top:2rem;
+    overflow:hidden;
 }
 
 .products .box-container .box .image img{
     height:25rem;
-
 }
 
 .products .box-container .box:hover .image img{
     transform:scale(1.1);
-
 }
 
 .products .box-container .box .image .icons{
     position: absolute;
     bottom: -7rem;left: 0; right:0;
     display: flex;
-
 }
 
 .products .box-container .box:hover .image .icons{
@@ -290,18 +288,18 @@ position: relative;
     line-height:5rem;
     font-size:2rem;
     width:50rem;
-    background: var(--pink);
+    background: var(--lavender);
     color:#fff;
 }
 
 .products .box-container .box .image .cart-btn{
-    border-left: .1rem solidn#fff7;
-    border-right: .1rem solidn#fff7;
+    border-left: .1rem solid #fff7;
+    border-right: .1rem solid #fff7;
     width: 100%;
 }
 
 .products .box-container .box .image .icons a:hover{
-    background: #333;
+    background: var(--sage-green);
 }
 
 .products .box-container .box .content{
@@ -316,7 +314,7 @@ position: relative;
 
 .products .box-container .box .content .price{
     font-size: 2.5rem;
-    color: var(--pink);
+    color: var(--magenta);
     font-weight: bolder;
     padding-top: .1rem;
 }
@@ -341,18 +339,17 @@ position: relative;
     padding: 3rem 2rem;
     position: relative;
     border: 1rem solid rgba(0,0,0,.1);
-
 }
 
 .review .box-container .box .fa-quote-right{
     position: absolute;
     bottom: 3rem; right: 3rem;
     font-size: 6rem;
-    color: #eee;
+    color: var(--light-beige);
 }
 
 .review .box-container .box .stars i{
-    color: var(--pink);
+    color: var(--sage-green);
     font-size: 2rem;
 }
 
@@ -420,11 +417,10 @@ position: relative;
     border-radius: .5rem;
     margin: .7rem 0;
     width: 100%;
-    
 }
 
 .contact .row form .box:focus{
-    border-color: var(--pink);
+    border-color: var(--lavender);
 }
 
 .contact .row form textarea{
@@ -456,7 +452,7 @@ position: relative;
 }
 
 .footer .box-container .box a:hover{
-    color: var(--pink);
+    color: var(--magenta);
     text-decoration: underline;
 }
 
@@ -475,57 +471,18 @@ position: relative;
 }
 
 .footer .credit span{
-    color: var(--pink);
+    color: var(--sage-green);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* media queries */
 @media(max-width:991px){
     html{
         font-size: 55%;
-
     }
     header{
         padding: 2rem;
     }
-    header{
-        padding: 2rem;
-    }
- 
 }
-
-
-
-
-
 
 @media(max-width:768px){
    header .fa-bars{
@@ -534,7 +491,7 @@ position: relative;
     header .navbar{
         position: absolute;
         top: 100%; left: 0; right: 0;
-        background: #eee;
+        background: var(--light-beige);
         border-top: .1rem solid rgba(0,0,0,.1);
         clip-path: polygon(0 0,100% 0,100% 0,0 0);
     }
@@ -556,13 +513,11 @@ position: relative;
     .home .content span{
         font-size: 2.5rem;
     }
-    .icons-container .icons  h3{
-    
+    .icons-container .icons h3{
         font-size: 2rem;
     }
 
-    .icons-container .icons  span{
-    
+    .icons-container .icons span{
         font-size: 1.7rem;
     }
 }
