@@ -119,7 +119,7 @@ header .fa-bars{
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background: url(./tsvety-buket-vesna-tiulpany-fresh-flowers-tulips-spring-pink.webp  ) no-repeat;
+    background: url(./bg.jpg  ) no-repeat;
     background-size: cover;
     background-position: center ;
 }
@@ -142,7 +142,7 @@ header .fa-bars{
 
 .home .content p{
     font-size: 1.5rem;
-    color: #999;
+    color:white;
     padding: 1rem 0;
     line-height: 1.5;
 }
